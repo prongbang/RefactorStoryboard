@@ -13,6 +13,8 @@
 		9F2111F1227ED080009E3197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2111EF227ED080009E3197 /* Main.storyboard */; };
 		9F2111F3227ED081009E3197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2111F2227ED081009E3197 /* Assets.xcassets */; };
 		9F2111F6227ED081009E3197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2111F4227ED081009E3197 /* LaunchScreen.storyboard */; };
+		9F2111FF227ED209009E3197 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2111FE227ED209009E3197 /* First.storyboard */; };
+		9F211201227ED221009E3197 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F211200227ED221009E3197 /* Second.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F2111F2227ED081009E3197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2111F5227ED081009E3197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2111F7227ED081009E3197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2111FE227ED209009E3197 /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		9F211200227ED221009E3197 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		9F2111E8227ED07F009E3197 /* RefactorStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				9F2111FD227ED1DF009E3197 /* Storyboards */,
 				9F2111E9227ED07F009E3197 /* AppDelegate.swift */,
 				9F2111EB227ED07F009E3197 /* FirstViewController.swift */,
 				9F2111ED227ED07F009E3197 /* SecondViewController.swift */,
-				9F2111EF227ED080009E3197 /* Main.storyboard */,
 				9F2111F2227ED081009E3197 /* Assets.xcassets */,
 				9F2111F4227ED081009E3197 /* LaunchScreen.storyboard */,
 				9F2111F7227ED081009E3197 /* Info.plist */,
 			);
 			path = RefactorStoryboard;
+			sourceTree = "<group>";
+		};
+		9F2111FD227ED1DF009E3197 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F2111EF227ED080009E3197 /* Main.storyboard */,
+				9F2111FE227ED209009E3197 /* First.storyboard */,
+				9F211200227ED221009E3197 /* Second.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,8 @@
 				9F2111F6227ED081009E3197 /* LaunchScreen.storyboard in Resources */,
 				9F2111F3227ED081009E3197 /* Assets.xcassets in Resources */,
 				9F2111F1227ED080009E3197 /* Main.storyboard in Resources */,
+				9F211201227ED221009E3197 /* Second.storyboard in Resources */,
+				9F2111FF227ED209009E3197 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +302,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RefactorStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.RefactorStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,8 +321,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ATXW43MG6;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RefactorStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prongbang.RefactorStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
